@@ -1,0 +1,180 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    position: relative;
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: stretch;
+    height: 70px;
+    width: 110%;
+    margin-left: 0;
+    
+}
+
+#lineMusic {
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    font-size: 17px;
+}
+
+#top-banner {
+    padding-block: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#titleImg {
+    width: 300px;
+    height: 300px;
+    padding-left: 20px;
+    margin-left: 100px;
+}
+
+#titleText {
+    font-size: 3vw;
+}
+
+
+.subTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    font-size: 3vw;
+}
+
+.titleBtn {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#playlist-btn {
+    height: 60px;
+    width: 150px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 1px #D0D3D4 solid;
+    background-color: #1ac044;
+    color: ivory;
+    font-size: 20px;
+}
+
+#share {
+    height: 60px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px #D0D3D4 solid;
+    background-color: white;
+    font-size: 20px;
+}
+
+.playlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.song {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    padding-block: 6px;
+    padding-inline: 10px;
+    padding-right: 10px;
+}
+
+.song:hover{
+    background-color: #D0D3D4;
+}
+
+.listImg {
+    width: 12%;
+}
+
+.songName {
+    align-self: center;
+    padding-left: 30px;
+    font-size: 4vw;
+    flex: 2 0 80px;
+    
+}
+
+.singerName {
+    align-self: center;
+    padding-left: 10px;
+    font-size: 4vw;
+    color: gray;
+    flex: 1 0 90px;
+}
+
+.albumName {
+    align-self: center;
+    padding-left: 50px;
+    font-size: 4vw;
+    color: gray;
+    flex: 1 0 120px;
+}
+
+.now-playing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    margin-left: 0;
+}
+
+#nowImg {
+    padding-left: 40px;
+}
+
+#song-name {
+    padding-inline: 30px;
+    flex-grow: 2;
+    font-size: 4vw;
+}
+
+#play-btn {
+    height: 40px;
+    width: 45px;
+    margin-inline: 30px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    border-radius: 5px;
+    border: 1px #D0D3D4 solid;
+    background-color: white;
+    font-size: 15px;
+}
+
+.play-time {
+    font-size: 20px;
+}

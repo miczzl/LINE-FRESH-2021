@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name=”viewport” content="width=device-width, initial-scale=1, maximum-scale=1"> 
+        <title>LINE MUSIC TIEHUA</title>
+        <link href="../static/style.css" rel="stylesheet">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="header">
+                <div id="lineMusic"><img src="../static/img/lineLogo.png"></div> 
+            </div>
+        
+            <div id="top-banner">
+                <div class="title">
+                    <br>
+                    <img src="../static/img/title.png" id="titleImg">
+                    <span id="titleText">
+                        <h1>2021 台東鐵花新世代</h1>
+                    </span>
+                    <br>
+                </div>    
+        
+                <div class="subTitle">
+                    <div>2021 台東在地歌手的音樂，你跟上了嗎？</div>
+                    <div>還有曾經在鐵花表演的音樂人們，絕對不可錯過的好歌聲！</div>
+                    <br>
+                    <div class="titleBtn">
+                        <button id="playlist-btn">▶ 播放</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="playlist">
+                <ul>
+                    <div id="song1" class="song">
+                        <img src="../static/img/anu.png" class="listImg">
+                        <div class="songName">Tengilen</div>
+                        <div class="singerName">阿努Anu</div>
+                        <div class="albumName">laloken ko orip</div>
+                    </div>
+                    <div id="song2" class="song">
+                        <img src="../static/img/balai.png" class="listImg">
+                        <div class="songName">愛 Ayi</div>
+                        <div class="singerName">巴賴</div>
+                        <div class="albumName">古老的透明</div>
+                    </div>
+                    <div id="song3" class="song">
+                        <img src="../static/img/matzka.png" class="listImg">
+                        <div class="songName">水災</div>
+                        <div class="singerName">MATZKA</div>
+                        <div class="albumName">089</div>
+                    </div>
+                    <div id="song4" class="song">
+                        <img src="../static/img/BouBu.png" class="listImg">
+                        <div class="songName">Ari</div>
+                        <div class="singerName">保卜 巴督路</div>
+                        <div class="albumName">城市.獵人</div>
+                    </div>
+                    <div id="song5" class="song">
+                        <img src="../static/img/exit.png" class="listImg">
+                        <div class="songName">採集</div>
+                        <div class="singerName">漂流出口</div>
+                        <div class="albumName">海女</div>
+                    </div>
+                    <div id="song6" class="song">
+                        <img src="../static/img/cepo.png" class="listImg">
+                        <div class="songName">者波 cepo'</div>
+                        <div class="singerName">阿努</div>
+                        <div class="albumName">混濁了 cepo'</div>
+                    </div>
+                    <div id="song7" class="song">
+                        <img src="../static/img/andong.png" class="listImg">
+                        <div class="songName">一直走</div>
+                        <div class="singerName">安懂</div>
+                        <div class="albumName">順著海流</div>
+                    </div>
+                    <div id="song8" class="song">
+                        <img src="../static/img/longLive.png" class="listImg">
+                        <div class="songName">毛毛歌</div>
+                        <div class="singerName">郭明龍</div>
+                        <div class="albumName">Long Live</div>
+                    </div>
+                    <div id="song9" class="song">
+                        <img src="../static/img/paliulius.png" class="listImg">
+                        <div class="songName">致布農青春</div>
+                        <div class="singerName">Paliulius</div>
+                        <div class="albumName">圍坐在一起</div>
+                    </div>
+                    <div id="song10" class="song">
+                        <img src="../static/img/125.png" class="listImg">
+                        <div class="songName">後山的山</div>
+                        <div class="singerName">湯姆與哈克</div>
+                        <div class="albumName">野狼125</div>
+                    </div>
+                </ul>
+                <br><br><br><br><br>
+            </div>
+            
+            <div class="now-playing">
+                <img src="../static/img/default.png" id="nowImg" class="listImg">
+                <div id="song-name"></div>
+                <div id="play-time">
+                    <span id="ply-min">00</span>:<span id="ply-sec">00</span>
+                    <span id="totalTime">/00:00</span></div>
+                <button id="play-btn">▶</button>
+            </div>
+        </div>
+        <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+        <!-- <script type="text/javascript" src="../static/music.js"></script> -->
+        <script type="text/javascript" src="../static/liff-starter.js"></script>
+    </body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name=”viewport” content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>invoiceScanner</title>
+</head>
+
+<body>
+  <html lang="en">
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Primary Meta Tags -->
+    <title>ScanApp - Free online barcode and qrcode scanner</title>
+    <meta name="title" content="Free online barcode and qrcode scanner">
+    <meta name="description"
+      content="Free online barcode and qrcode scanner - scan directly on your web browser using camera or images saved on your device. Works well on smart phones as well as PC or Mac.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://scanapp.org/">
+    <meta property="og:title" content="Free online barcode and qrcode scanner">
+    <meta property="og:description"
+      content="Free online barcode and qrcode scanner - scan directly on your web browser using camera or images saved on your device. Works well on smart phones as well as PC or Mac.">
+    <meta property="og:image" content="https://scanapp.org/assets/svg/scanapp-logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://scanapp.org/">
+    <meta property="twitter:title" content="Free online barcode and qrcode scanner">
+    <meta property="twitter:description"
+      content="Free online barcode and qrcode scanner - scan directly on your web browser using camera or images saved on your device. Works well on smart phones as well as PC or Mac.">
+    <meta property="twitter:image" content="https://scanapp.org/assets/svg/scanapp-logo.png">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-2KZEP7DPYH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-2KZEP7DPYH');
+    </script>
+
+    <link rel="preload" href="/assets/main.css" as="style">
+    <link rel="stylesheet" href="/assets/main.css">
+
+    <style type="text/css"
+      id="s./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./package/src/animation.scss-0">
+      /**
+   * @license
+   * Copyright Akveo. All Rights Reserved.
+   * Licensed under the MIT License. See License.txt in the project root for license information.
+   */
+      .eva-animation {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+      }
+
+      .eva-infinite {
+        animation-iteration-count: infinite;
+      }
+
+      .eva-icon-shake {
+        animation-name: eva-shake;
+      }
+
+      .eva-icon-zoom {
+        animation-name: eva-zoomIn;
+      }
+
+      .eva-icon-pulse {
+        animation-name: eva-pulse;
+      }
+
+      .eva-icon-flip {
+        animation-name: eva-flipInY;
+      }
+
+      .eva-hover {
+        display: inline-block;
+      }
+
+      .eva-hover:hover .eva-icon-hover-shake,
+      .eva-parent-hover:hover .eva-icon-hover-shake {
+        animation-name: eva-shake;
+      }
+
+      .eva-hover:hover .eva-icon-hover-zoom,
+      .eva-parent-hover:hover .eva-icon-hover-zoom {
+        animation-name: eva-zoomIn;
+      }
+
+      .eva-hover:hover .eva-icon-hover-pulse,
+      .eva-parent-hover:hover .eva-icon-hover-pulse {
+        animation-name: eva-pulse;
+      }
+
+      .eva-hover:hover .eva-icon-hover-flip,
+      .eva-parent-hover:hover .eva-icon-hover-flip {
+        animation-name: eva-flipInY;
+      }
+
+      @keyframes eva-flipInY {
+        from {
+          transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+          animation-timing-function: ease-in;
+          opacity: 0;
+        }
+
+        40% {
+          transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+          animation-timing-function: ease-in;
+        }
+
+        60% {
+          transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+          opacity: 1;
+        }
+
+        80% {
+          transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        }
+
+        to {
+          transform: perspective(400px);
+        }
+      }
+
+      @keyframes eva-shake {
+
+        from,
+        to {
+          transform: translate3d(0, 0, 0);
+        }
+
+        10%,
+        30%,
+        50%,
+        70%,
+        90% {
+          transform: translate3d(-3px, 0, 0);
+        }
+
+        20%,
+        40%,
+        60%,
+        80% {
+          transform: translate3d(3px, 0, 0);
+        }
+      }
+
+      @keyframes eva-pulse {
+        from {
+          transform: scale3d(1, 1, 1);
+        }
+
+        50% {
+          transform: scale3d(1.2, 1.2, 1.2);
+        }
+
+        to {
+          transform: scale3d(1, 1, 1);
+        }
+      }
+
+      @keyframes eva-zoomIn {
+        from {
+          opacity: 1;
+          transform: scale3d(0.5, 0.5, 0.5);
+        }
+
+        50% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body data-instant-allow-query-string="" data-instant-allow-external-links="">
+
+    <div>
+      
+      <link rel="stylesheet" href="../static/style.css">
+
+      <div id="scanapp-top-container">
+        <div id="scanapp-container">
+          <div id="scanner">
+            <div class="empty"></div>
+            <div id="reader" style="position: relative; padding: 0px;">
+              <div style="text-align: left; margin: 0px;">
+                <div id="reader__header_message"
+                  style="display: none; text-align: center; font-size: 14px; padding: 2px 10px; margin: 4px; border-top: 1px solid rgb(246, 246, 246); background: rgba(0, 0, 0, 0); color: rgb(17, 17, 17);">
+                  要求權限中...</div>
+              </div>
+              <div id="reader__scan_region"
+                style="width: 100%; min-height: 100px; text-align: center; position: relative;"><br></div>
+              <div id="reader__dashboard" style="width: 100%;">
+                <div id="reader__dashboard_section" style="width: 100%; padding: 10px 0px; text-align: left;">
+                  <div>
+                    <div id="reader__dashboard_section_csr" style="display: block; text-align: center;"><span
+                        style="margin-right: 10px;"><select id="reader__camera_selection" style="display: none;">
+                          <option value="7f9af70a12ee0d4b0c1781aa289aa997fa7ed99d1289ea6a7a2adf28b044bb8c">FaceTime
+                            HD攝影機（內建） (05ac:8514)</option>
+                        </select></span><span><button style="opacity: 1; display: inline-block;">開始掃描</button><button style="display: none;" disabled="">停止掃描</button></span>
+                    </div>
+                    <div id="reader__dashboard_section_fsr" style="text-align: center; display: none;"><input
+                        id="reader__filescan_input" accept="image/*" type="file" disabled=""
+                        style="width: 200px;"><span> Select Image</span></div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="workspace">
+            <div class="workspace-header"></div>
+            <div id="no-result-container"></div>
+            <div id="new-scanned-result">
+              <div class="header">
+                <span id="scan-result-code-type"></span> 
+              </div>
+              <div class="section">
+                <div class="image" id="scan-result-image" style="display: none;"></div>
+                <div class="data">
+                  <table id="result_table">
+                    <tbody>
+                      <tr>
+                        <!-- <td>Parsed</td> -->
+                        <td colspan="2">
+                          <div>
+                            <div class="badge">
+                              <div class="badge-icon">
+                                <span><b>Type</b></span>
+                              </div>
+                              <div class="badge-text">
+                                <span id="scan-result-badge-body">{type}</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="scan-result-parsed">{parsed result here}</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img class="action_image" id="action-share" src="./assets/svg/share-svgrepo-com.svg"
+                            style="display: none;">
+                          <img class="action_image" id="action-copy" src="./assets/svg/copy-svgrepo-com.svg">
+                          <img class="action_image" id="action-payment" src="./assets/svg/coin-svgrepo-com.svg"
+                            style="display: none">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td id="invoiceTitle"></td>
+                        <td style="word-break: break-word">
+                          <div id="scan-result-text">{text result here}</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div id="body-footer">
+                    <div style="margin-bottom: 10px;" id="scan-result">{scan result here}</div>
+                    <button id="scan-result-close">掃描下一張</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="history">
+              <div class="workspace-header">Scan History</div>
+              <div id="history-list"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="banners-container">
+        <div class="banners">
+          <div class="banner error">
+            <div class="banner-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                class="eva eva-alert-circle-outline" fill="#ffffff">
+                <g data-name="Layer 2">
+                  <g data-name="alert-circle">
+                    <rect width="24" height="24" opacity="0"></rect>
+                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path>
+                    <circle cx="12" cy="16" r="1"></circle>
+                    <path d="M12 7a1 1 0 0 0-1 1v5a1 1 0 0 0 2 0V8a1 1 0 0 0-1-1z"></path>
+                  </g>
+                </g>
+              </svg></div>
+            <div class="banner-message" id="banner-error-message">{}</div>
+            <div class="banner-close" onclick="hideBanners()"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" class="eva eva-close-outline" fill="#ffffff">
+                <g data-name="Layer 2">
+                  <g data-name="close">
+                    <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect>
+                    <path
+                      d="M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z">
+                    </path>
+                  </g>
+                </g>
+              </svg></div>
+          </div>
+          <div class="banner success">
+            <div class="banner-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                class="eva eva-checkmark-circle-outline" fill="#ffffff">
+                <g data-name="Layer 2">
+                  <g data-name="checkmark-circle">
+                    <rect width="24" height="24" opacity="0"></rect>
+                    <path
+                      d="M9.71 11.29a1 1 0 0 0-1.42 1.42l3 3A1 1 0 0 0 12 16a1 1 0 0 0 .72-.34l7-8a1 1 0 0 0-1.5-1.32L12 13.54z">
+                    </path>
+                    <path
+                      d="M21 11a1 1 0 0 0-1 1 8 8 0 0 1-8 8A8 8 0 0 1 6.33 6.36 7.93 7.93 0 0 1 12 4a8.79 8.79 0 0 1 1.9.22 1 1 0 1 0 .47-1.94A10.54 10.54 0 0 0 12 2a10 10 0 0 0-7 17.09A9.93 9.93 0 0 0 12 22a10 10 0 0 0 10-10 1 1 0 0 0-1-1z">
+                    </path>
+                  </g>
+                </g>
+              </svg></div>
+            <div class="banner-message" id="banner-success-message">{}</div>
+            <div class="banner-close" onclick="hideBanners()"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" class="eva eva-close-outline" fill="#ffffff">
+                <g data-name="Layer 2">
+                  <g data-name="close">
+                    <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect>
+                    <path
+                      d="M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z">
+                    </path>
+                  </g>
+                </g>
+              </svg></div>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://unpkg.com/eva-icons" onload="eva.replace()"></script>
+      <script src="../static/html5-qrcode1.min.js"></script>
+      
+    </div>
+
+
+
+    <div id="vimeo-record-extension"></div>
+
+
+    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <script src="../static/app.js"></script>
+    <!-- <script type="text/javascript" src="../static/music.js"></script> -->
+    <!-- <script type="text/javascript" src="../static/liff-starter.js"></script> -->
+  </body>
+
+
+  </html>
